@@ -1,0 +1,17 @@
+{
+  "name": "Screenrail",
+  "short_name": "Screenrail",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf8fc",
+  "theme_color": "#faf8fc",
+  "icons": [
+    {
+      "src": "./icon-r-v2.jpeg",
+      "sizes": "208x208",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
