@@ -1,0 +1,58 @@
+APP TEXT — EDITING GUIDE
+
+ONE-TIME SETUP
+Upload index.html and app-text.json into the same GitHub folder as your
+existing website files. All your existing images and video remain in place.
+
+FUTURE WORDING CHANGES
+1. Edit app-text.json in a plain-text editor, or use GitHub's file editor.
+2. Change the words between the quotation marks on the RIGHT of each colon.
+3. Keep the keys on the left, commas, quotation marks and braces intact.
+4. Save/upload only app-text.json, then commit the change.
+5. Refresh the app, or close and reopen it.
+
+EXAMPLES
+  "app_name": "Screenrail"
+  "holder_name": "Euan Stenson"
+  "view_pass_button": "View Pass"
+
+SHARED WORDS
+Values such as "{app_name} Pass" reuse app_name automatically.
+Leave {app_name}, {holder_name}, {active_expiry} and similar placeholders
+in place unless you want to replace that whole sentence with your own text.
+Only change the shared name once to update all sentences which use it.
+
+MAIN SETTINGS
+app_name: heading, browser title, and suggested name when adding a new
+  Home Screen shortcut.
+holder_name: name on both cards, the detail screen and related pop-ups.
+pass_title: title on the cards and detail screen.
+active_expiry / expired_expiry: dates shown on the two cards.
+active_number / expired_number: fictional prop identifiers, including copy.
+issued_method: text beside ISSUED on the detail screen.
+
+LABELS AND BUTTONS
+Keys ending in _label control labels.
+Keys ending in _button control buttons.
+Keys ending in _title and _message control pop-up headings and messages.
+Keys ending in _accessibility are screen-reader labels.
+carousel_label uses {number} and {total}, filled in automatically.
+
+JSON TIPS
+- Use straight double quotes, not curly quotation marks.
+- Keep a comma after each line except the final setting.
+- To include a double quote inside a value, write it as \".
+- To add a line break inside a value, use \n.
+- Edit in Notepad, VS Code or GitHub, not a formatted Word document.
+- If a setting is missing or the JSON is invalid, the app keeps built-in
+  defaults rather than breaking.
+
+WHAT THIS FILE DOES NOT CHANGE
+It does not change the website URL, images, video, colours, layout or the
+letters baked into the SR logo image.
+The name below an EXISTING iPhone Home Screen icon will not automatically
+change. Remove and re-add the shortcut to choose a new name.
+manifest.webmanifest also retains its existing name metadata; update its
+name and short_name if you want to align that metadata with a rebrand.
+
+This patch preserves the fictional Screenrail film-prop design.
